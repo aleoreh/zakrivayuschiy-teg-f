@@ -1,0 +1,17 @@
+{
+  "name": "zakrivayuschiy-teg-f",
+  "version": "1.0",
+  "description": "Яндекс Практикум. Проектная работа «Закрывающий тег»",
+  "main": "index.js",
+  "scripts": {
+    "live-server": "live-server --no-browser"
+  },
+  "keywords": [],
+  "author": "Aleksey Orekhov",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0"
+  }
+}
