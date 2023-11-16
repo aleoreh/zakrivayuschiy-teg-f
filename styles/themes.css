@@ -5,26 +5,34 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
-html.theme-light {
+:root.theme-light {
   --bg-color: #fff;
   --primary-color: #000;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --bg-color: #fff;
     --primary-color: #000;
+    --font-weight-400: 400;
+    --font-weight-700: 700;
   }
 }
 
-html.theme-dark {
+:root.theme-dark {
   --bg-color: #000;
   --primary-color: #00cc14;
+  --font-weight-400: 465;
+  --font-weight-700: 785;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #000;
     --primary-color: #00cc14;
+    --font-weight-400: 465;
+    --font-weight-700: 785;
   }
 }

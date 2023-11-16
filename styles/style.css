@@ -14,14 +14,10 @@
 
 */
 
-html {
-  font-family: Inter, Helvetica, Arial, sans-serif;
-  color: var(--primary-color);
-}
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--primary-sans-serif-family), Helvetica, Arial, sans-serif;
+  color: var(--primary-color);
   background-color: var(--bg-color);
 }
-
