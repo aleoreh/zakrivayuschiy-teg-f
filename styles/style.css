@@ -14,7 +14,11 @@
 
 */
 
+/* ~~~~~~~~~~~~~~~~~ page ~~~~~~~~~~~~~~~~ */
+
 .page {
+  padding-block-start: 102px;
+  padding-inline: 2px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--primary-sans-serif-family), Helvetica, Arial, sans-serif;
@@ -29,6 +33,28 @@
       var(--gradient-primary-color) 0 2px,
       transparent 2px 4px
     ),
-    linear-gradient(var(--gradient-begin-color) 0.01%, var(--gradient-end-color));
+    linear-gradient(
+      var(--gradient-begin-color) 0.01%,
+      var(--gradient-end-color)
+    );
   background-size: cover;
+}
+
+/* ~~~~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~~ */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--primary-color);
+  background-color: var(--bg-color);
+  font-family: var(--accent-font-family);
+}
+
+/* ~~~~~~~~~~~~~~ theme-menu ~~~~~~~~~~~~~ */
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
