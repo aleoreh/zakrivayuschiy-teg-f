@@ -17,6 +17,9 @@
 /* ~~~~~~~~~~~~~~~~~ page ~~~~~~~~~~~~~~~~ */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-block-start: 102px;
   padding-inline: 2px;
   min-inline-size: 320px;
@@ -44,6 +47,7 @@
 
 .header {
   display: flex;
+  max-inline-size: 696px;
   flex-direction: column;
   align-items: center;
   border: 2px solid var(--primary-color);
