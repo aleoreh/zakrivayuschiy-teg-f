@@ -19,5 +19,16 @@
   min-block-size: 100dvb;
   font-family: var(--primary-sans-serif-family), Helvetica, Arial, sans-serif;
   color: var(--primary-color);
-  background-color: var(--bg-color);
+  background-image: repeating-linear-gradient(
+      to left,
+      var(--gradient-primary-color) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--gradient-primary-color) 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(var(--gradient-begin-color) 0.01%, var(--gradient-end-color));
+  background-size: cover;
 }
