@@ -4,7 +4,7 @@
   "description": "Яндекс Практикум. Проектная работа «Закрывающий тег»",
   "main": "index.js",
   "scripts": {
-    "live-server": "live-server --no-browser"
+    "live-server": "live-server --no-browser --port=1234"
   },
   "keywords": [],
   "author": "Aleksey Orekhov",
