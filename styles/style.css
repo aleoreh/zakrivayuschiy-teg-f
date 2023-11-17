@@ -20,12 +20,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-block-start: 102px;
-  padding-inline: 2px;
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
-  font-family: var(--primary-sans-serif-family), Helvetica, Arial, sans-serif;
-  color: var(--primary-color);
   background-image: repeating-linear-gradient(
       to left,
       var(--gradient-primary-color) 0 2px,
@@ -41,6 +35,12 @@
       var(--gradient-end-color)
     );
   background-size: cover;
+  color: var(--primary-color);
+  font-family: var(--primary-sans-serif-family), Helvetica, Arial, sans-serif;
+  min-block-size: 100dvb;
+  min-inline-size: 320px;
+  padding-block-start: 102px;
+  padding-inline: 2px;
 }
 
 /* ~~~~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~~ */
