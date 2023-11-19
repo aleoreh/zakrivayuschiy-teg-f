@@ -40,7 +40,6 @@
   min-block-size: 100dvb;
   min-inline-size: 320px;
   padding-block-start: 102px;
-  padding-inline: 2px;
 }
 
 /* ~~~~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~~ */
@@ -53,7 +52,8 @@
   background-color: var(--bg-color);
   font-family: var(--accent-font-family);
   inline-size: 100%;
-  max-inline-size: 696px;
+  margin-block-end: 104px;
+  max-inline-size: var(--container-inline-size);
   padding-block: clamp(118px, calc(5% + 99px), 134px) 25px;
 }
 
@@ -98,4 +98,34 @@
   content: "▶";
   font-size: 0.875rem;
   inset-inline-start: calc(-1rem - 4px);
+}
+
+/* ~~~~~~~~~~~~~~~~~ card ~~~~~~~~~~~~~~~~ */
+
+.card {
+  border: 2px solid var(--primary-color);
+  background-color: var(--bg-color);
+  max-inline-size: var(--container-inline-size);
+}
+
+.card__title {
+  border-block-end: 1px solid var(--primary-color);
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding-block: 2px;
+  padding-inline: 5px;
+}
+
+.card__img-wrapper {
+  border-block: 1px solid var(--primary-color);
+}
+
+.card__image {
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+}
+
+.card__main-text {
+  border-block-start: 1px solid var(--primary-color);
 }

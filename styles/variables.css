@@ -3,4 +3,5 @@
 :root {
   --primary-sans-serif-family: "Inter";
   --accent-font-family: "Press Start 2P";
+  --container-inline-size: 696px;
 }
