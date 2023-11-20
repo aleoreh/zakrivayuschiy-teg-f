@@ -176,3 +176,35 @@
   outline: 2px solid var(--primary-color);
   outline-offset: -2px;
 }
+
+/* ~~~~~~~~~~~~~~~~ footer ~~~~~~~~~~~~~~~ */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+  inline-size: 100%;
+  max-inline-size: var(--container-inline-size);
+  padding-block: 54px 102px;
+  padding-inline: 34px;
+}
+
+.footer__save-button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 14px;
+  background-color: transparent;
+  font-family: var(--accent-font-family), "Courier New", Courier, monospace;
+  font-size: 0.875rem;
+  gap: 8px;
+  inline-size: clamp(306px, 80%, 335px);
+  outline: 2px solid var(--primary-color);
+  outline-offset: -2px;
+}
+
+.footer__save-image {
+  inline-size: 28px;
+}
