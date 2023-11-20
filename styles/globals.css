@@ -5,7 +5,7 @@
 *,
 *::after,
 *::before {
-  outline: 1px dotted pink;
+  /* outline: 1px dotted pink; */
 }
 
 
