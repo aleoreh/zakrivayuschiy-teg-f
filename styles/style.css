@@ -154,6 +154,17 @@
 }
 
 .card__icon-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  inline-size: 27px;
+}
+
+.card__icon-button svg {
+  display: block;
+}
+
+.card__like-button {
   display: flex;
   align-items: center;
   justify-content: center;
