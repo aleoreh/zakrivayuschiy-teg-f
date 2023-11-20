@@ -57,9 +57,8 @@
   border: 2px solid var(--primary-color);
   background-color: var(--bg-color);
   font-family: var(--accent-font-family), "Courier New", Courier, monospace;
-  inline-size: 100%;
+  inline-size: var(--inline-size-calc);
   margin-block-end: 100px;
-  max-inline-size: var(--container-inline-size);
   padding-block: clamp(118px, calc(5% + 99px), 134px) 25px;
 }
 
@@ -106,6 +105,12 @@
   inset-inline-start: calc(-1rem - 4px);
 }
 
+/* ~~~~~~~~~~~~~~~~~ main ~~~~~~~~~~~~~~~~ */
+
+.main {
+  inline-size: var(--inline-size-calc);
+}
+
 /* ~~~~~~~~~~~~~~~~~ card ~~~~~~~~~~~~~~~~ */
 
 .card {
@@ -114,7 +119,6 @@
   padding: 2px;
   background-color: var(--primary-color);
   gap: 2px;
-  max-inline-size: var(--container-inline-size);
 }
 
 .card__title {
@@ -213,7 +217,7 @@
   align-items: center;
   background-color: var(--bg-color);
   inline-size: 100%;
-  max-inline-size: var(--container-inline-size);
+  inline-size: var(--inline-size-calc);
   padding-block: 54px 102px;
   padding-inline: 34px;
 }

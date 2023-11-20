@@ -3,5 +3,11 @@
 :root {
   --primary-sans-serif-family: "Inter";
   --accent-font-family: "Press Start 2P";
-  --container-inline-size: 696px;
+  --mobile-inline-size: 375px;
+  --widescreen-inline-size: 696px;
+  --inline-size-calc: clamp(
+    var(--mobile-inline-size),
+    round(down, 30.14% + 262px, 1px),
+    var(--widescreen-inline-size)
+  );
 }
