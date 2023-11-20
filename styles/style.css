@@ -33,6 +33,15 @@
   opacity: 0.6;
 }
 
+.focus-shadowed:focus,
+.focus-shadowed:focus-visible {
+  outline: none;
+}
+
+.focus-shadowed:focus-visible {
+  box-shadow: var(--primary-color) 2px 2px;
+}
+
 /* ~~~~~~~~~~~~~~~~~ page ~~~~~~~~~~~~~~~~ */
 
 .page {
@@ -238,11 +247,10 @@
   justify-content: center;
   padding: 9px 17px;
   border: none;
+  border: 2px solid var(--primary-color);
   background-color: var(--bg-color);
   font-family: var(--accent-font-family), "Courier New", Courier, monospace;
   min-inline-size: 130px;
-  outline: 2px solid var(--primary-color);
-  outline-offset: -2px;
 }
 
 /* ~~~~~~~~~~~~~~~~ footer ~~~~~~~~~~~~~~~ */
@@ -264,13 +272,12 @@
   align-items: center;
   justify-content: center;
   padding: 15px 14px;
+  border: 2px solid var(--primary-color);
   background-color: transparent;
   font-family: var(--accent-font-family), "Courier New", Courier, monospace;
   font-size: 0.875rem;
   gap: 8px;
   inline-size: clamp(306px, 80%, 335px);
-  outline: 2px solid var(--primary-color);
-  outline-offset: -2px;
 }
 
 .footer__save-image {
