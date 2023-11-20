@@ -20,6 +20,19 @@
   filter: blur(1px);
 }
 
+.button {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.button[disabled] {
+  opacity: 0.6;
+}
+
 /* ~~~~~~~~~~~~~~~~~ page ~~~~~~~~~~~~~~~~ */
 
 .page {
@@ -84,18 +97,43 @@
 }
 
 .theme-menu__button {
+  position: relative;
   padding: 0;
   border: none;
   background-color: transparent;
-  cursor: pointer;
   font-size: 0.875rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
+.theme-menu__button:focus-visible {
+  opacity: 0.6;
+  outline: none;
+}
+
+.theme-menu__button::after {
+  position: absolute;
+  background-color: var(--primary-color);
+  block-size: 1px;
+  content: "";
+  inline-size: 100%;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: transform 0.3s;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+  /* background-color: green; */
+
+}
+
 .theme-menu__button:disabled {
   position: relative;
   opacity: 0.6;
+  pointer-events: none;
 }
 
 .theme-menu__button:disabled::before {
