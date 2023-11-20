@@ -5,6 +5,14 @@
 *,
 *::after,
 *::before {
+  outline: 1px dotted pink;
+}
+
+
+
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 

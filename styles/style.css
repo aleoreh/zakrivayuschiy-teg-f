@@ -50,7 +50,7 @@
   align-items: center;
   border: 2px solid var(--primary-color);
   background-color: var(--bg-color);
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), "Courier New", Courier, monospace;
   inline-size: 100%;
   margin-block-end: 104px;
   max-inline-size: var(--container-inline-size);
@@ -58,12 +58,12 @@
 }
 
 .header__tag-name {
-  font-size: clamp(3.063rem, 1.921rem + 4.923vw - 2 * 2px, 4.063rem);
+  font-size: clamp(3.063rem, 1.921rem + 4.923vw, 4.063rem);
   margin-block-end: 20px;
 }
 
 .header__title {
-  font-size: clamp(0.875rem, 0.233rem + 2.769vw - 2 * 2px, 1.438rem);
+  font-size: clamp(0.875rem, 0.233rem + 2.769vw, 1.438rem);
   margin-block-end: 24px;
   text-transform: uppercase;
 }
@@ -103,29 +103,65 @@
 /* ~~~~~~~~~~~~~~~~~ card ~~~~~~~~~~~~~~~~ */
 
 .card {
-  border: 2px solid var(--primary-color);
-  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  background-color: var(--primary-color);
+  gap: 2px;
   max-inline-size: var(--container-inline-size);
 }
 
 .card__title {
-  border-block-end: 1px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: var(--bg-color);
   font-size: 1.125rem;
   font-weight: 700;
-  padding-block: 2px;
-  padding-inline: 5px;
 }
 
-.card__img-wrapper {
-  border-block: 1px solid var(--primary-color);
+.card__image-wrapper {
+  background-color: var(--bg-color);
+  block-size: clamp(371px, 100vw, 696px);
 }
 
 .card__image {
-  display: block;
+  block-size: 100%;
   inline-size: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
-.card__main-text {
-  border-block-start: 1px solid var(--primary-color);
+.card__content {
+  padding: 25px;
+  background-color: var(--bg-color);
+}
+
+.card__predefined-text {
+  margin-block-end: 27px;
+}
+
+.card__custom-text {
+  margin-block-end: 25px;
+}
+
+.card__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.card__icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 17px;
+  border: none;
+  background-color: var(--bg-color);
+  font-family: var(--accent-font-family), "Courier New", Courier, monospace;
+  min-inline-size: 130px;
+  outline: 2px solid var(--primary-color);
+  outline-offset: -2px;
 }
