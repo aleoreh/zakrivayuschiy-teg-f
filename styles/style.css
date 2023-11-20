@@ -126,8 +126,6 @@
 
 .theme-menu__button:focus-visible::after {
   transform: scaleX(1);
-  /* background-color: green; */
-
 }
 
 .theme-menu__button:disabled {
@@ -138,9 +136,9 @@
 
 .theme-menu__button:disabled::before {
   position: absolute;
+  animation: menu-button 1s infinite ease-in-out;
   content: "▶";
   font-size: 0.875rem;
-  inset-inline-start: calc(-1rem - 4px);
 }
 
 /* ~~~~~~~~~~~~~~~~~ main ~~~~~~~~~~~~~~~~ */
@@ -277,4 +275,28 @@
 
 .footer__save-image {
   inline-size: 28px;
+}
+
+/* ~~~~~~~~~~~~~~ keyframes ~~~~~~~~~~~~~~ */
+
+@keyframes menu-button {
+  0% {
+    inset-inline-start: calc(-1rem - 4px);
+  }
+
+  25% {
+    inset-inline-start: calc(-1rem - 2px);
+  }
+
+  50% {
+    inset-inline-start: calc(-1rem);
+  }
+
+  75% {
+    inset-inline-start: calc(-1rem - 2px);
+  }
+
+  100% {
+    inset-inline-start: calc(-1rem - 4px);
+  }
 }
