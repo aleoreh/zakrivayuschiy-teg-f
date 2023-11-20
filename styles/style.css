@@ -52,7 +52,7 @@
   background-color: var(--bg-color);
   font-family: var(--accent-font-family), "Courier New", Courier, monospace;
   inline-size: 100%;
-  margin-block-end: 104px;
+  margin-block-end: 100px;
   max-inline-size: var(--container-inline-size);
   padding-block: clamp(118px, calc(5% + 99px), 134px) 25px;
 }
@@ -123,8 +123,30 @@
 }
 
 .card__image-wrapper {
+  position: relative;
   background-color: var(--bg-color);
   block-size: clamp(371px, 100vw, 696px);
+}
+
+.card__image-watermark {
+  position: absolute;
+  color: var(--primary-color);
+  font-family: var(--accent-font-family), "Courier New", Courier, monospace;
+  inset-block-start: 11px;
+  inset-inline-end: 23px;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+  text-shadow: 0 -1px var(--bg-color), 1px 0 var(--bg-color),
+    0 1px var(--bg-color), -1px 0 var(--bg-color);
+}
+
+@supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
+  .card__image-label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--bg-color);
+    /* stylelint-disable-next-line property-no-unknown */
+    text-stroke: 1px var(--bg-color);
+  }
 }
 
 .card__image {
