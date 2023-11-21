@@ -268,22 +268,48 @@
 }
 
 .card__icon-button {
-  padding: 5px;
+  padding: 0;
   border: none;
   background-color: transparent;
   block-size: 38px;
+  cursor: pointer;
   inline-size: 38px;
   outline: 2px solid transparent;
   outline-offset: -2px;
   transition: outline-color 0.3s ease;
+
+  --contour-color: var(--primary-color);
+  --main-body-color: transparent;
+  --core-color: transparent;
+  --sparks-color: transparent;
 }
 
 .card__icon-button:focus-visible {
   outline-color: var(--primary-color);
 }
 
+.core {
+  transition: fill 0.3s;
+}
+
+.core:hover {
+  transition: fill 10s;
+}
+
+.main-body {
+  transition: fill 0.5s;
+  transition-delay: 0.1s;
+}
+
+.card__icon-button:hover {
+  --core-color: var(--primary-color);
+  /* --main-body-color: var(--primary-color); */
+}
+
 .card__icon-button svg {
   display: block;
+  block-size: 38px;
+  inline-size: 38px;
 }
 
 .card__like-button {
