@@ -288,22 +288,34 @@
   outline-color: var(--primary-color);
 }
 
+.card__icon-button:hover {
+  --core-color: red;
+  /* --main-body-color: var(--primary-color); */
+  transition: fill 3s;
+}
+
+.heart-wrapper {
+  block-size: 38px;
+  inline-size: 38px;
+}
+
 .core {
   transition: fill 0.3s;
 }
 
-.core:hover {
-  transition: fill 10s;
-}
-
-.main-body {
-  transition: fill 0.5s;
-  transition-delay: 0.1s;
-}
-
-.card__icon-button:hover {
+.card__icon-button:hover .core {
   --core-color: var(--primary-color);
-  /* --main-body-color: var(--primary-color); */
+
+  transition: fill 0.03s;
+}
+
+.main-body1 {
+  transition: fill 0.3s;
+}
+
+.main-body1:hover {
+  transition: fill 0.3s;
+  transition-delay: 0.05s;
 }
 
 .card__icon-button svg {
