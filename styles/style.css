@@ -279,8 +279,12 @@
   transition: outline-color 0.3s ease;
 
   --contour-color: var(--primary-color);
-  --main-body-color: transparent;
+  --contour-transition: fill 0.5s;
   --core-color: transparent;
+  --core-transition: fill 0.3s;
+  --main-body-color: transparent;
+  --main-body-transition: fill 0.05s;
+  --main-body-transition-delay: 0.05s;
   --sparks-color: transparent;
 }
 
@@ -289,36 +293,15 @@
 }
 
 .card__icon-button:hover {
-  --core-color: red;
-  /* --main-body-color: var(--primary-color); */
-  transition: fill 3s;
-}
-
-.heart-wrapper {
-  block-size: 38px;
-  inline-size: 38px;
-}
-
-.core {
-  transition: fill 0.3s;
-}
-
-.card__icon-button:hover .core {
+  --contour-transition: fill 1s;
   --core-color: var(--primary-color);
-
-  transition: fill 0.03s;
+  --core-transition: fill 0.03s;
+  --main-body-color: var(--primary-color);
+  --main-body-transition: 0.3s;
+  --main-body-transition-delay: 0;
 }
 
-.main-body1 {
-  transition: fill 0.3s;
-}
-
-.main-body1:hover {
-  transition: fill 0.3s;
-  transition-delay: 0.05s;
-}
-
-.card__icon-button svg {
+.like-icon {
   display: block;
   block-size: 38px;
   inline-size: 38px;
