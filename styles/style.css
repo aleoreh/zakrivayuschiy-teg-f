@@ -303,6 +303,7 @@
 }
 
 .card__icon-button:active {
+  --contour-color: var(--primary-color);
   --contour-transition: fill 1s;
   --core-color: var(--main-animation-color);
   --core-transition: fill 0.03s;
@@ -315,6 +316,17 @@
   display: block;
   block-size: 38px;
   inline-size: 38px;
+}
+
+.like-icon.is-liked {
+  --contour-color: var(--main-animation-color);
+  --contour-transition-delay: 0.06s;
+  --core-color: var(--main-animation-color);
+  --core-transition: fill 0.03s;
+  --main-body-color: var(--main-animation-color);
+  --main-body-transition: 0.3s;
+  --main-body-transition-delay: 0;
+  --heart-animation: 0.3s ease-in 0.1s heart-flash;
 }
 
 .card__like-button {
@@ -381,5 +393,25 @@
 
   100% {
     inset-inline-start: calc(-1rem - 4px);
+  }
+}
+
+@keyframes heart-flash {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes heart-sparks {
+  0%: {
+
   }
 }
