@@ -211,7 +211,7 @@
   padding: 5px 10px;
   background-color: var(--bg-color);
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
 }
 
 .card__image-wrapper {
@@ -251,13 +251,16 @@
 .card__content {
   padding: 25px;
   background-color: var(--bg-color);
+  font-weight: var(--font-weight-400);
 }
 
 .card__predefined-text {
+  font-weight: inherit;
   margin-block-end: 27px;
 }
 
 .card__custom-text {
+  font-weight: inherit;
   margin-block-end: 25px;
 }
 
