@@ -20,10 +20,6 @@
   filter: blur(1px);
 }
 
-.button[disabled] {
-  opacity: 0.6;
-}
-
 .focus-shadowed {
   transition: box-shadow 0.3s;
 }
@@ -143,30 +139,9 @@
   text-transform: uppercase;
 }
 
-.theme-menu__button[disabled] {
-  opacity: 0.6;
-}
-
 .theme-menu__button:focus-visible {
   opacity: 0.6;
   outline: none;
-}
-
-.theme-menu__button::after {
-  position: absolute;
-  background-color: var(--primary-color);
-  block-size: 1px;
-  content: "";
-  inline-size: 100%;
-  inset-block-end: 0;
-  inset-inline-start: 0;
-  transform: scaleX(0);
-  transform-origin: 0 0;
-  transition: transform 0.3s;
-}
-
-.theme-menu__button:focus-visible::after {
-  transform: scaleX(1);
 }
 
 .theme-menu__button:disabled {

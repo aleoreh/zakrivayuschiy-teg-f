@@ -20,3 +20,21 @@
 .menu-hover:hover {
   opacity: 0.6;
 }
+
+.menu-focus::after {
+  position: absolute;
+  background-color: var(--primary-color);
+  block-size: 1px;
+  content: "";
+  inline-size: 100%;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: transform 0.3s;
+}
+
+.menu-focus:focus-visible::after {
+  transform: scaleX(1);
+}
+
