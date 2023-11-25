@@ -38,3 +38,16 @@
   transform: scaleX(1);
 }
 
+.menu-can-activate:disabled {
+  position: relative;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.menu-can-activate:disabled::before {
+  position: absolute;
+  animation: menu-button 1s infinite ease-in-out;
+  content: "▶";
+  font-size: 0.875rem;
+}
+
