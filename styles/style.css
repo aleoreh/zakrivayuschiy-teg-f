@@ -20,15 +20,6 @@
   filter: blur(1px);
 }
 
-.button {
-  cursor: pointer;
-  transition: opacity 0.3s;
-}
-
-.button:hover {
-  opacity: 0.6;
-}
-
 .button[disabled] {
   opacity: 0.6;
 }
@@ -150,6 +141,10 @@
   font-size: 0.875rem;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.theme-menu__button[disabled] {
+  opacity: 0.6;
 }
 
 .theme-menu__button:focus-visible {
