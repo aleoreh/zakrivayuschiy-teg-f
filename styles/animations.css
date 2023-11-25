@@ -50,3 +50,17 @@
   content: "▶";
   font-size: 0.875rem;
 }
+
+.button-focusable {
+  transition: box-shadow 0.3s;
+}
+
+.button-focusable:focus,
+.button-focusable:focus-visible {
+  outline: none;
+}
+
+.button-focusable:focus-visible {
+  box-shadow: var(--primary-color) 2px 2px;
+}
+

@@ -20,19 +20,6 @@
   filter: blur(1px);
 }
 
-.focus-shadowed {
-  transition: box-shadow 0.3s;
-}
-
-.focus-shadowed:focus,
-.focus-shadowed:focus-visible {
-  outline: none;
-}
-
-.focus-shadowed:focus-visible {
-  box-shadow: var(--primary-color) 2px 2px;
-}
-
 .hover-animated {
   position: relative;
 }
