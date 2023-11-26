@@ -5,6 +5,8 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
+/* --sliding-bg-color - цвет фона, на который будет выезжать псевдоэлемент при hover'е на кнопку */
+
 :root.theme-light {
   --bg-color: #fff;
   --primary-color: #000;
@@ -13,6 +15,7 @@
   --gradient-primary-color: #d3d3d3;
   --gradient-begin-color: #e7e7e7;
   --gradient-end-color: #1a1a1a;
+  --sliding-bg-color: #fff;
 }
 
 @media (prefers-color-scheme: light) {
@@ -24,6 +27,7 @@
     --gradient-primary-color: #d3d3d3;
     --gradient-begin-color: #e7e7e7;
     --gradient-end-color: #1a1a1a;
+    --sliding-bg-color: #fff;
   }
 }
 
@@ -35,6 +39,7 @@
   --gradient-primary-color: #000;
   --gradient-begin-color: #007f0c;
   --gradient-end-color: #004306;
+  --sliding-bg-color: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -46,5 +51,7 @@
     --gradient-primary-color: #000;
     --gradient-begin-color: #007f0c;
     --gradient-end-color: #004306;
+    --sliding-bg-color: #ff33eb;
   }
 }
+

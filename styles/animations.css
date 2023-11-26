@@ -69,17 +69,19 @@
 }
 
 .hover-animated:hover {
+  background-color: var(--bg-color);
   opacity: 1;
 }
 
 .hover-animated::before {
   position: absolute;
-  z-index: 1;
-  background-color: var(--primary-color);
+  z-index: 2;
+  background-color: var(--sliding-bg-color);
   block-size: 100%;
   content: "";
   inline-size: 100%;
   inset: 0;
+  mix-blend-mode: difference;
   scale: 0 1;
   transform-origin: 0;
   transition: scale 0.5s ease-in-out;
@@ -91,10 +93,7 @@
 
 .hover-animated span {
   position: relative;
-  z-index: 2;
-  background-color: var(--primary-color);
-  color: var(--bg-color);
-  mix-blend-mode: difference;
+  z-index: 1;
 }
 
 /* ~~~~~~~~~~~~~~ keyframes ~~~~~~~~~~~~~~ */
