@@ -20,12 +20,22 @@
   filter: blur(1px);
 }
 
+.button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+}
+
 /* ~~~~~~~~~~~~~~~~~ page ~~~~~~~~~~~~~~~~ */
 
 .page {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--bg-color);
   background-image: repeating-linear-gradient(
       to left,
       var(--gradient-primary-color) 0 2px,
@@ -188,13 +198,6 @@
   block-size: 38px;
   cursor: pointer;
   inline-size: 38px;
-  outline: 2px solid transparent;
-  outline-offset: -2px;
-  transition: outline-color 0.3s ease;
-}
-
-.card__icon-button:focus-visible {
-  outline-color: var(--primary-color);
 }
 
 .card__like-button {
@@ -296,6 +299,8 @@
   padding: 30px 40px;
   border: 2px solid var(--primary-color);
   animation: 0.1s appear-from-portal;
+  background-color: inherit;
+  color: inherit;
   font-family: var(--accent-font-family);
   font-size: 0.875rem;
   inline-size: 90%;
@@ -341,7 +346,6 @@
 .save-dialog__submit {
   padding: 9px 17px;
   border: 2px solid var(--primary-color);
-  border-radius: 0;
   background: none;
   font-family: inherit;
   font-size: inherit;

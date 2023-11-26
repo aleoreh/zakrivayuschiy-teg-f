@@ -64,6 +64,16 @@
   box-shadow: var(--primary-color) 2px 2px;
 }
 
+.outline-transition {
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  transition: outline-color 0.3s ease;
+}
+
+.outline-transition:focus-visible {
+  outline-color: var(--primary-color);
+}
+
 .hover-animated {
   position: relative;
 }
