@@ -16,6 +16,7 @@
   --gradient-begin-color: #e7e7e7;
   --gradient-end-color: #1a1a1a;
   --sliding-bg-color: #fff;
+  --backdrop-color: var(--primary-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -28,6 +29,7 @@
     --gradient-begin-color: #e7e7e7;
     --gradient-end-color: #1a1a1a;
     --sliding-bg-color: #fff;
+    --backdrop-color: var(--primary-color);
   }
 }
 
@@ -40,6 +42,7 @@
   --gradient-begin-color: #007f0c;
   --gradient-end-color: #004306;
   --sliding-bg-color: #00cc14;
+  --backdrop-color: var(--bg-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,6 +55,6 @@
     --gradient-begin-color: #007f0c;
     --gradient-end-color: #004306;
     --sliding-bg-color: #ff33eb;
+    --backdrop-color: var(--bg-color);
   }
 }
-
