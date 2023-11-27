@@ -97,7 +97,7 @@
   font-family: var(--accent-font-family), "Courier New", Courier, monospace;
   inline-size: var(--inline-size-calc);
   margin-block-end: 100px;
-  padding-block: clamp(118px, calc(5% + 99px), 134px) 25px;
+  padding-block: clamp(118px, calc(5% + 99px), 135px) 25px;
 }
 
 .header__tag-name {
@@ -168,9 +168,8 @@
 
 .card__image-wrapper {
   position: relative;
+  aspect-ratio: 1 / 1;
   background-color: var(--bg-color);
-  block-size: clamp(371px, 100vw - 4px, 696px);
-  inline-size: clamp(369px, 100vw - 4px, 696px);
 }
 
 .card__image-watermark {
@@ -179,7 +178,7 @@
   font-family: var(--accent-font-family), "Courier New", Courier, monospace;
   font-variation-settings: "wdth" 110, "wgth" 700;
   inset-block-start: 22px;
-  inset-inline-end: 10px;
+  inset-inline-end: clamp(10px, 3%, 25px);
   mix-blend-mode: hard-light;
   opacity: 0.5;
   text-shadow: 0 -1px var(--bg-color), 1px 0 var(--bg-color),
@@ -227,7 +226,7 @@
 }
 
 .card__icon-button {
-  padding: 0;
+  padding: 2px 0 0;
   border: none;
   background-color: transparent;
   block-size: 38px;
@@ -307,7 +306,7 @@
   background-color: var(--bg-color);
   inline-size: 100%;
   inline-size: var(--inline-size-calc);
-  padding-block: 48px 100px;
+  padding-block: 50px 100px;
   padding-inline: 34px;
 }
 
@@ -316,7 +315,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 15px 14px;
+  padding: 14px;
   border: 2px solid var(--primary-color);
   background-color: transparent;
   font-family: var(--accent-font-family), "Courier New", Courier, monospace;
