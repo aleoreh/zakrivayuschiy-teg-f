@@ -230,7 +230,7 @@
 }
 
 .card__icon-button {
-  padding: 2px 0 0;
+  padding: 0;
   border: none;
   background-color: transparent;
   block-size: 38px;
@@ -255,8 +255,8 @@
 
 .like-icon {
   display: block;
-  block-size: 40px;
-  inline-size: 40px;
+  block-size: 38px;
+  inline-size: 38px;
 
   --main-animation-color: #f00;
   --contour-color: var(--primary-color);
