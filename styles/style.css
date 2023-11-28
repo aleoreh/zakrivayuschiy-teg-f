@@ -100,6 +100,10 @@
   padding-block: clamp(118px, calc(5% + 99px), 135px) 25px;
 }
 
+.header__tag-link {
+  text-decoration: none;
+}
+
 .header__tag-name {
   font-size: clamp(3.063rem, 1.921rem + 4.923vw, 4.063rem);
   margin-block-end: 20px;
