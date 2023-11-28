@@ -3,5 +3,5 @@
 :root {
   --primary-sans-serif-family: "Inter";
   --accent-font-family: "Press Start 2P";
-  --inline-size-calc: clamp(375px, calc(30.14% + 262px), 700px);
+  --inline-size-calc: clamp(375px, calc(31% + 262px), 700px);
 }
