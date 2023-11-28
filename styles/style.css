@@ -172,7 +172,6 @@
 
 .card__image-wrapper {
   position: relative;
-  aspect-ratio: 1 / 1;
   background-color: var(--bg-color);
 }
 
@@ -199,7 +198,8 @@
 }
 
 .card__image {
-  block-size: 100%;
+  display: block;
+  aspect-ratio: 1 / 1;
   inline-size: 100%;
   object-fit: cover;
   object-position: center;
