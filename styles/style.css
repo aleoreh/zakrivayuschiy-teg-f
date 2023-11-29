@@ -334,14 +334,14 @@
 /* ~~~~~~~~~~~~~ save-dialog ~~~~~~~~~~~~~ */
 
 .save-dialog {
-  padding: 30px 40px;
+  padding: 30px calc(-2 / 213 * 100vw + 3090 / 71 * 1px);
   border: 2px solid var(--primary-color);
   animation: 0.1s appear-from-portal;
   background-color: inherit;
   color: inherit;
   font-family: var(--accent-font-family);
   font-size: 0.875rem;
-  inline-size: 90%;
+  inline-size: calc(16 / 1065 * 100vw + 24095 / 71 * 1px);
   max-inline-size: 357px;
   min-inline-size: 341px;
 }
@@ -381,13 +381,18 @@
   text-transform: uppercase;
 }
 
+.save-dialog__form {
+  display: flex;
+  justify-content: center;
+}
+
 .save-dialog__submit {
   padding: 9px 17px;
   border: 2px solid var(--primary-color);
   background: none;
   font-family: inherit;
   font-size: inherit;
-  inline-size: 75%;
+  inline-size: 100%;
   line-height: 90%;
   min-inline-size: 257px;
   text-transform: uppercase;
