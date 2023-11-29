@@ -104,12 +104,9 @@
 }
 
 .header__tag-link {
-  text-decoration: none;
-}
-
-.header__tag-name {
   font-size: clamp(3.063rem, 1.921rem + 4.923vw, 4.063rem);
   margin-block-end: 20px;
+  text-decoration: none;
 }
 
 .header__title {
