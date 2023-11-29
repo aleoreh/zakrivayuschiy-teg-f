@@ -1,1 +1,8 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --primary-sans-serif-family: "Inter";
+  --accent-font-family: "Press Start 2P";
+  --inline-size-calc: clamp(375px, calc(31% + 258px), 700px);
+  --main-slnt: 0;
+}

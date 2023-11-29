@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
     <title>Закрывающий тег</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
@@ -14,11 +19,19 @@
   </head>
   <body class="page">
     <header class="header">
+      <a class="header__tag-link" href="#">
+        <h2 class="header__tag-name">&lt;/HTML&gt;</h2>
+      </a>
+      <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
+            <button
+              type="button"
+              data-theme="dark"
+              class="theme-menu__button menu-hoverable menu-focusable menu-can-activate"
+            >
               Темно
             </button>
           </li>
@@ -27,20 +40,339 @@
               type="button"
               data-theme="auto"
               disabled
-              class="theme-menu__button"
+              class="theme-menu__button menu-hoverable menu-focusable menu-can-activate"
             >
               Авто
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
+            <button
+              type="button"
+              data-theme="light"
+              class="theme-menu__button menu-hoverable menu-focusable menu-can-activate"
+            >
               Светло
             </button>
           </li>
         </ul>
       </nav>
     </header>
-    <main></main>
+
+    <!--~~~~~~~~~~~~~~~~ main ~~~~~~~~~~~~~~~~-->
+
+    <main class="main">
+      <section class="card">
+        <h2 class="card__title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
+        <div class="card__image-wrapper">
+          <img
+            src="./images/image-01.jpg"
+            alt="Фрагмент дороги с надписью краской 'Start here'"
+            class="card__image blur-filter"
+          />
+          <span class="card__image-watermark">&LT;/start&GT;</span>
+        </div>
+        <div class="card__content">
+          <p class="card__predefined-text">
+            Это было самое начало пути. На этом этапе важно было проникнуться
+            основами и настроиться на учёбу. И, возможно, подумать, как новые
+            знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__custom-text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+          <div class="card__actions">
+            <button class="card__icon-button outline-transition">
+              <svg class="like-icon">
+                <use href="./svg/heart.svg#heart" />
+              </svg>
+            </button>
+            <button
+              class="card__like-button button button-focusable hover-animated"
+            >
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <h2 class="card__title">1 спринт: Я — чистый лист</h2>
+        <div class="card__image-wrapper">
+          <img
+            src="./images/image-02.jpg"
+            alt="Лист бумаги с лежащими рядом пером и карандашом"
+            class="card__image invert-filter"
+          />
+          <span class="card__image-watermark">&LT;/blank&GT;</span>
+        </div>
+        <div class="card__content">
+          <p class="card__predefined-text">
+            На первых этапах мы работали со страхами и сомнениями, которые часто
+            испытывают новички. Один из них — страх перед чистым листом. Это,
+            конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим
+            ощущением скрываются более глубокие вопросы: с чего начать? а вдруг
+            будет слишком сложно? что, если я не справлюсь?
+          </p>
+          <p class="card__custom-text">
+            Место для ваших воспоминаний о начале первого спринта.
+          </p>
+          <div class="card__actions">
+            <button class="card__icon-button outline-transition">
+              <svg class="like-icon">
+                <use href="./svg/heart.svg#heart" />
+              </svg>
+            </button>
+            <button
+              class="card__like-button button button-focusable hover-animated"
+            >
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <h2 class="card__title">1 спринт: А если не получится?</h2>
+        <div class="card__image-wrapper">
+          <img
+            src="./images/image-03.jpg"
+            alt="Женщина-учёный перед столом со скальпелем и линейкой в руках"
+            class="card__image grayscale-filter"
+          />
+          <span class="card__image-watermark">&LT;/inspiration&GT;</span>
+        </div>
+        <div class="card__content">
+          <p class="card__predefined-text">
+            Первый проект — позади! Но это всё ещё самое начало пути. Радость
+            могла быстро померкнуть и смениться ожиданием провала. Или вы,
+            наоборот, могли вдохновиться успехами и поверить в себя.
+          </p>
+          <p class="card__custom-text">
+            Место для ваших воспоминаний об окончании первого спринта.
+          </p>
+          <div class="card__actions">
+            <button class="card__icon-button outline-transition">
+              <svg class="like-icon">
+                <use href="./svg/heart.svg#heart" />
+              </svg>
+            </button>
+            <button
+              class="card__like-button button button-focusable hover-animated"
+            >
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
+        <div class="card__image-wrapper">
+          <img
+            src="./images/image-04.jpg"
+            alt="Девушка идёт по горной тропе на фоне рассвета"
+            class="card__image sepia-filter"
+          />
+          <span class="card__image-watermark">&LT;/effort&GT;</span>
+        </div>
+        <div class="card__content">
+          <p class="card__predefined-text">
+            На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы
+            понять, как много ещё впереди. Вы могли попытаться погнаться за
+            идеалом и понять, что он недостижим. А, может, вы вовсе и не
+            подвержены перфекционизму и вместо того, чтобы сделать идеально,
+            старались просто сделать.
+          </p>
+          <p class="card__custom-text">
+            Место для ваших воспоминаний о начале второго спринта.
+          </p>
+          <div class="card__actions">
+            <button class="card__icon-button outline-transition">
+              <svg class="like-icon">
+                <use href="./svg/heart.svg#heart" />
+              </svg>
+            </button>
+            <button
+              class="card__like-button button button-focusable hover-animated"
+            >
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
+        <div class="card__image-wrapper">
+          <img
+            src="./images/image-05.jpg"
+            alt="Дву широких белых кружки стоят на белом столе"
+            class="card__image brightness-filter"
+          />
+          <span class="card__image-watermark">&LT;/together&GT;</span>
+        </div>
+        <div class="card__content">
+          <p class="card__predefined-text">
+            Всё это время вы были не одиноки (хотя, возможно, иногда и
+            чувствовали, что одни против целого мира). Вас окружали
+            одногруппники, команда сопровождения и просто близкие люди, которым
+            можно пожаловаться, если очередной макет просто так не поддавался.
+            Осваивать что-то новое легче, когда рядом есть единомышленники, не
+            правда ли?
+          </p>
+          <p class="card__custom-text">
+            Место для ваших воспоминаний об окончании второго спринта.
+          </p>
+          <div class="card__actions">
+            <button class="card__icon-button outline-transition">
+              <svg class="like-icon">
+                <use href="./svg/heart.svg#heart" />
+              </svg>
+            </button>
+            <button
+              class="card__like-button button button-focusable hover-animated"
+            >
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <h2 class="card__title">3 спринт: Обходные стратегии</h2>
+        <div class="card__image-wrapper">
+          <img
+            src="./images/image-06.jpg"
+            alt="Икосаэдр, поворачиваюшийся вокруг своей оси и уходяший в бесконечность"
+            class="card__image contrast-filter"
+          />
+          <span class="card__image-watermark">&LT;/angle&GT;</span>
+        </div>
+        <div class="card__content">
+          <p class="card__predefined-text">
+            На этом курсе вы постоянно решали разные задачи. В какой-то момент
+            вам могло показаться, что решения просто иссякли. Значит, пришло
+            время посмотреть на задачу под другим углом.
+          </p>
+          <p class="card__custom-text">
+            Место для ваших воспоминаний о начале третьего спринта.
+          </p>
+          <div class="card__actions">
+            <button class="card__icon-button outline-transition">
+              <svg class="like-icon">
+                <use href="./svg/heart.svg#heart" />
+              </svg>
+            </button>
+            <button
+              class="card__like-button button button-focusable hover-animated"
+            >
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
+        <div class="card__image-wrapper">
+          <img
+            src="./images/image-07.jpg"
+            alt="Сосредоточенный мужчина за шахматным столом"
+            class="card__image saturate-filter"
+          />
+          <span class="card__image-watermark">&LT;/concentration&GT;</span>
+        </div>
+        <div class="card__content">
+          <p class="card__predefined-text">
+            Во время учёбы часто возникает чувство, когда не знаешь, за что
+            хвататься. Вроде и проектную пора сдавать, и задачи хочется
+            порешать, и в теории получше разобраться, и жизнь не забыть пожить.
+            В такие моменты очень нужна концентрация. Вспомните, откуда вы её
+            черпали.
+          </p>
+          <p class="card__custom-text">
+            Место для ваших воспоминаний об окончании третьего спринта.
+          </p>
+          <div class="card__actions">
+            <button class="card__icon-button outline-transition">
+              <svg class="like-icon">
+                <use href="./svg/heart.svg#heart" />
+              </svg>
+            </button>
+            <button
+              class="card__like-button button button-focusable hover-animated"
+            >
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <h2 class="card__title">«Сейчас я здесь»</h2>
+        <div class="card__image-wrapper">
+          <img
+            src="./images/image-08.jpg"
+            alt="Мужчина с котомкой, идущий в бамбуковой роще по грунтовой дороге, огороженной забором из ветвей"
+            class="card__image rgb-shift-filter"
+          />
+          <span class="card__image-watermark">&LT;/road&GT;</span>
+        </div>
+        <div class="card__content">
+          <p class="card__predefined-text">
+            Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
+            Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с
+            окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И
+            этот мир постоянно меняется. Познать его полностью не получится, но
+            это тот случай, когда важен сам процесс познания. Ведь часто путь —
+            и есть результат.
+          </p>
+          <p class="card__custom-text">
+            Место, чтобы остановиться, подумать и написать, что вы чувствуете в
+            этой точке пути.
+          </p>
+          <div class="card__actions">
+            <button class="card__icon-button outline-transition">
+              <svg class="like-icon">
+                <use href="./svg/heart.svg#heart" />
+              </svg>
+            </button>
+            <button
+              class="card__like-button button button-focusable hover-animated"
+            >
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--~~~~~~~~~~~~~~~ footer ~~~~~~~~~~~~~~~-->
+
+    <footer class="footer">
+      <button
+        class="footer__save-button button button-focusable hover-animated"
+        onclick="window['saveDialog'].showModal()"
+        aria-controls="saveDialog"
+      >
+        <svg class="footer__save-image" viewBox="0 0 28 28">
+          <use href="./svg/floppy.svg#floppy" />
+        </svg>
+        <span class="button-text">Сохранить на память</span>
+      </button>
+    </footer>
+    <dialog id="saveDialog" class="save-dialog">
+      <div class="save-dialog__header">
+        <svg class="save-dialog__image" viewBox="0 0 28 28">
+          <use href="./svg/floppy.svg#floppy" />
+        </svg>
+        <h2 class="save-dialog__title">Вставьте дискету, чтобы продолжить</h2>
+      </div>
+      <form class="save-dialog__form">
+        <button
+          type="button"
+          class="save-dialog__submit button button-focusable hover-animated"
+          onclick="window['saveDialog'].close()"
+        >
+          <span>ok</span>
+        </button>
+      </form>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

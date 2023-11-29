@@ -4,3 +4,57 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+/* --sliding-bg-color - цвет фона, на который будет выезжать псевдоэлемент при hover'е на кнопку */
+
+:root.theme-light {
+  --bg-color: #fff;
+  --primary-color: #000;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+  --gradient-primary-color: #d3d3d3;
+  --gradient-begin-color: #e7e7e7;
+  --gradient-end-color: #1a1a1a;
+  --sliding-bg-color: #fff;
+  --backdrop-color: var(--primary-color);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #fff;
+    --primary-color: #000;
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+    --gradient-primary-color: #d3d3d3;
+    --gradient-begin-color: #e7e7e7;
+    --gradient-end-color: #1a1a1a;
+    --sliding-bg-color: #fff;
+    --backdrop-color: var(--primary-color);
+  }
+}
+
+:root.theme-dark {
+  --bg-color: #000;
+  --primary-color: #00cc14;
+  --font-weight-400: 465;
+  --font-weight-700: 785;
+  --gradient-primary-color: #000;
+  --gradient-begin-color: #007f0c;
+  --gradient-end-color: #004306;
+  --sliding-bg-color: #00cc14;
+  --backdrop-color: var(--bg-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000;
+    --primary-color: #00cc14;
+    --font-weight-400: 465;
+    --font-weight-700: 785;
+    --gradient-primary-color: #000;
+    --gradient-begin-color: #007f0c;
+    --gradient-end-color: #004306;
+    --sliding-bg-color: #ff33eb;
+    --backdrop-color: var(--bg-color);
+  }
+}
