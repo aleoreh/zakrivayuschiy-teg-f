@@ -97,7 +97,7 @@
   align-items: center;
   border: 2px solid var(--primary-color);
   background-color: var(--bg-color);
-  font-family: var(--accent-font-family), "Courier New", Courier, monospace;
+  font-family: var(--accent-font-family), Copperplate, Papyrus, fantasy;
   inline-size: var(--inline-size-calc);
   margin-block-end: 100px;
   padding-block: clamp(120px, calc(5% + 100px), 135px) 25px;
