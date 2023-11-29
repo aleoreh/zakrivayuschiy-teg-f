@@ -321,17 +321,17 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 14px;
+  padding: 15px;
   border: 2px solid var(--primary-color);
   background-color: var(--bg-color);
   font-family: var(--accent-font-family), "Courier New", Courier, monospace;
   font-size: 0.875rem;
   gap: 8px;
-  inline-size: clamp(306px, 80%, 335px);
+  inline-size: clamp(306px, 80%, 341px);
 }
 
 .footer__save-image {
-  inline-size: 28px;
+  inline-size: calc(-7 / 1065 * 100vw + 2163 / 71 * 1px);
 }
 
 /* ~~~~~~~~~~~~~ save-dialog ~~~~~~~~~~~~~ */
