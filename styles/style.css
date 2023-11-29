@@ -302,6 +302,34 @@
   --sparks-animation: 0.3s ease-in 0.3s heart-sparks;
 }
 
+.like-icon .heart {
+  animation: var(--heart-animation);
+  transform-origin: 50% 50%;
+}
+
+.like-icon .contour {
+  fill: var(--contour-color);
+  transition: var(--contour-transition);
+  transition-delay: var(--contour-transition-delay);
+}
+
+.like-icon .main-body {
+  fill: var(--main-body-color);
+  transition: var(--main-body-transition);
+  transition-delay: var(--main-body-transition-delay);
+}
+
+.like-icon .core {
+  fill: var(--core-color);
+  transition: var(--core-transition);
+  transition-delay: var(--core-transition-delay);
+}
+
+.like-icon .sparks {
+  animation: var(--sparks-animation);
+  fill: var(--sparks-color);
+}
+
 /* ~~~~~~~~~~~~~~~~ footer ~~~~~~~~~~~~~~~ */
 
 .footer {
