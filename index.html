@@ -361,11 +361,10 @@
         </svg>
         <h2 class="save-dialog__title">Вставьте дискету, чтобы продолжить</h2>
       </div>
-      <form class="save-dialog__form">
+      <form class="save-dialog__form" method="dialog">
         <button
-          type="button"
+          type="submit"
           class="save-dialog__submit button button-focusable hover-animated"
-          onclick="window['saveDialog'].close()"
         >
           <span>ok</span>
         </button>
