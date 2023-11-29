@@ -81,6 +81,7 @@
   background-size: cover;
   color: var(--primary-color);
   font-family: var(--primary-sans-serif-family), Helvetica, Arial, sans-serif;
+  font-variation-settings: "wght" var(--font-weight-400), "slnt" var(--main-slnt);
   min-block-size: 100dvb;
   min-inline-size: 320px;
   padding-block-start: 100px;
@@ -167,6 +168,8 @@
   background-color: var(--bg-color);
   font-size: 1.125rem;
   font-weight: var(--font-weight-700);
+  /* stylelint-disable-next-line order/properties-order */
+  font-variation-settings: "wght" var(--font-weight-700), "slnt" var(--main-slnt);
 }
 
 .card__image-wrapper {
