@@ -182,6 +182,7 @@
   font-variation-settings: "wdth" 110, "wgth" 700;
   inset-block-start: 22px;
   inset-inline-end: clamp(10px, 3%, 25px);
+  letter-spacing: -2px;
   mix-blend-mode: hard-light;
   opacity: 0.5;
   text-shadow: 0 -1px var(--bg-color), 1px 0 var(--bg-color),
